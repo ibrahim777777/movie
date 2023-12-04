@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <EditText
+        android:id="@+id/nametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="57dp"
+        android:ems="10"
+        android:hint="enter name"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/passtext"
+        app:layout_constraintEnd_toEndOf="@+id/passtext" />
+
+    <EditText
+        android:id="@+id/passtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="53dp"
+        android:ems="10"
+        android:hint="enter pass"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/mailtext"
+        app:layout_constraintEnd_toEndOf="@+id/mailtext" />
+
+    <EditText
+        android:id="@+id/mailtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="293dp"
+        android:ems="10"
+        android:hint="enter mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/busave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="48dp"
+        android:onClick="save"
+        android:text="REGISTER"
+        app:layout_constraintEnd_toEndOf="@+id/mailtext"
+        app:layout_constraintTop_toBottomOf="@+id/mailtext" />
+</androidx.constraintlayout.widget.ConstraintLayout>

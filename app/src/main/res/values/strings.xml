@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyMovie</string>
+    <array name="movietypes">
+        <item>please select</item>
+        <item>horror</item>
+        <item>comedy</item>
+        <item>love</item>
+        <item>action</item>
+        <item>drama</item>
+        <item>romance</item>
+
+    </array>
+</resources>
